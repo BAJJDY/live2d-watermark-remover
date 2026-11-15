@@ -57,7 +57,7 @@ python3 scripts/run.py verify ./out/model
 | `python3` | 全部脚本 | 必需 |
 | `pillow`、`numpy` | 擦贴图、判文字几何、重绘水印 | `analyze` 的 D 段与 `--erase-tex` 不可用，其余照常 |
 | `scipy` | 连通块统计（判"是不是文字"） | 退化成只看透明度曲线，可能漏判 |
-| `node` | 跑官方 Cubism Core（权威校验） | 用 `verify_py.py` 做结构自检；本目录已带 `scripts/cubismcore.min.js`（5.1.0） |
+| `node` | 跑官方 Cubism Core（权威校验） | 用 `verify_py.py` 做结构自检；有 Core 时放 `scripts/cubismcore.min.js`（不做二次分发，需自行下载） |
 
 ```bash
 pip install pillow numpy scipy      # 可选，装了体验更好
@@ -228,5 +228,5 @@ python3 scripts/strip_meta.py ./out/model
 | `scripts/verify_py.py` | 纯 Python 结构自检（不需要 node） |
 | `scripts/verify.cjs` | 官方 Cubism Core 校验（需要 node） |
 | `scripts/audit_and_repack.py` | 出包前逐项核对 + 打包 |
-| `scripts/cubismcore.min.js` | 校验用官方 Core 5.1.0 |
+| `scripts/cubismcore.min.js` | 校验用官方 Core（自行下载，仓库不含） |
 | `examples/commands.md` | 两个真实模型上的完整命令记录 |
