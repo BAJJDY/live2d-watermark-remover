@@ -1,0 +1,11 @@
+# 必需
+# python3
+
+# 推荐（擦贴图 / 判文字几何 / 重绘水印）
+pillow
+numpy
+
+# 可选（连通块统计，判"是不是文字"更准）
+scipy
+
+# 可选（官方 Cubism Core 校验需要 node；也可用 scripts/verify_py.py 做结构自检）
