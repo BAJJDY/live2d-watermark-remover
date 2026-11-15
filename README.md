@@ -5,6 +5,18 @@
 - 说明书（AI 先读这个）：[`SKILL.md`](SKILL.md)
 - 统一入口：`python3 scripts/run.py {analyze|apply|verify|pack} ...`
 
+```bash
+git clone https://github.com/BAJJDY/live2d-watermark-remover.git
+cd live2d-watermark-remover
+pip install -r requirements.txt      # 全部可选，只装 python3 也能跑
+```
+
+> **关于 `scripts/cubismcore.min.js`**
+> 官方 Cubism Core 由 Live2D 分发，本仓库不再二次分发（已在 `.gitignore` 排除）。
+> 想用「官方 Core 权威校验」时，自己从 [Live2D 官网](https://www.live2d.com/download/cubism-sdk/) 取
+> `live2dcubismcore.min.js`，改名为 `cubismcore.min.js` 放进 `scripts/` 即可；
+> 不放也能跑 —— `verify_py.py` 会做纯 Python 结构自检。
+
 ## 30 秒上手
 
 ```bash
