@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.DS_Store
+# Cubism Core 由 Live2D 官方分发，不便再分发，请按 README 自行下载
+scripts/cubismcore.min.js
